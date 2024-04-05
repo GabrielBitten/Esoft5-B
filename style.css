@@ -17,7 +17,15 @@ td {
 * {
   box-sizing: border-box;
 }
+#pokemonImage img{
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 300px ;
+  width: 200px;
+  height: auto;
 
+}
 /* Estilos gerais */
 
 body {
