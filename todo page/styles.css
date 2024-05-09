@@ -1,0 +1,124 @@
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+figure,
+table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+   grid-template-rows: auto auto 1fr;
+  }
+  
+  
+header {
+    background-color:  #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  
+  footer {
+    background-color:  #333;
+    color: #fff;
+    padding: 20px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: auto;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer a[href*='#'] {
+    color: white;
+  }
+  
+  footer a[href*='mailto'] {
+    color: orangered;
+  }
+  
+  footer a[href*='tel'] {
+    color: limegreen;
+  }
+  
+  footer a[href]:hover {
+    opacity: 0.8;
+  }
+
+  form{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    flex-direction: column;
+  }
+  input,textarea{
+    padding: 10px;
+    margin: 5px;
+    width: 210px;
+    font-weight: bold;
+   
+   border: #f4f4f4;
+    
+  }
+  textarea{
+   padding: 20px;
+  }
+  input:nth-child(3n){
+    max-width: 100px;
+    cursor: pointer;
+    background-color: #0074d9;
+    color: white;
+    transition: 0.2;
+
+  }
+ 
+  .container{
+    display: flex;
+    background-color: black;
+    height: 400px;
+  }
