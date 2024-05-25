@@ -30,8 +30,8 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   margin: 0 20px;
 }
@@ -271,19 +271,3 @@ footer a[href*='tel'] {
 footer a[href]:hover {
   opacity: 0.8;
 }
-/* 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-main > section,
-main > article {
-  animation: fadeIn 0.5s ease-in-out forwards;
-} */
